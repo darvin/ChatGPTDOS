@@ -12,3 +12,7 @@ optionally, load:
   - [Generate](GENERATE.md) - code generator suite
   - [Language](LANGUAGE.md) - foreign language tools and teacher
   - [Islam](ISLAM.md) - islam tools and teacher
+  
+  
+  
+ *I'm poor jobless developer stranded without cash in Ukraine 🇺🇦 thats being bombarded by Russia please donate Etherium 0x7dfC192c7Fc2e29990469d47D4291810Eba9D131 *
