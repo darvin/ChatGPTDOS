@@ -12,7 +12,22 @@ screen like battery percentage, time, date and notifications.
 """
  1. join $0, $1, $2 with space, assign result to $EXPR
  2. calculate $EXPR, assign result to $RESULT
- 3. ouput: "$EXPR = $RESULT"
+ 3. output: "$EXPR = $RESULT"
+"""
+
+
+'BIN/DUMMY.x'
+"""
+echo "\$ARGV = $ARGV"
+echo "\$0 = $0"
+echo "\$1 = $1"
+echo "\$2 = $2"
+"""
+
+'BIN/WC.x'
+"""
+parse $ARGV just like linux command 'wc' would do
+count whats specified by parsed options in contents of supplied filename just like 'wc' would do
 """
 
 'BIN/BPWD.x'
@@ -28,9 +43,8 @@ list content of $1 using $0 as a format options, similiar to linux command 'ls'
 
 'BIN/BCAT.x'
 """
-in response you will output characters from file '$0' in a chat in a code block. after is BIS_LIMIT=100 characters 
-have reached, output is interrupted and string ">>> CONTINUE?" is appended. Continue the output where it's left off 
-if user sends "CONTINUE", "y", "Y", or empty message
+if $0 is not empty, output characters from file '$0'
+otherwise, output characters passed via $STDIN
 """
 
 'BIN/THEAD.x'

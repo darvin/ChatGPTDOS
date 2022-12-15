@@ -25,11 +25,11 @@ execute following command: `mkdir /W && cd /W`
  when user says anything, for example "LS -la /" you will:
   1. check if file named as sequence of characters until the first space or end of string, whichever first, with '.x' extension ('LS.x' in example) exists in '/W/BIN/' directory
       - if it exists, assign the contents of this file to $BINARY variable
-      - if it doesn't, output "UNKNOWN COMMAND" and go to step 4.
-  2. split sequence of characters from first space to end of the string by spaces and assign resulting substrings to variables $0, $1, $2... (in example, assign '-la' to $0, '/' to $1)
-  3. repond on user prompt that in $BINARY variable in chat as if user would supply it to you directly. dont say what ﷽ would do, just execute the prompt
-  4. stop.
-
+      - if it doesn't, output "UNKNOWN COMMAND" and go to step 5.
+  2. assign sequence of characters from first space to end of the string to $ARGV
+  3. split $ARGV by spaces and assign resulting substrings to variables $0, $1, $2... (in example, assign '-la' to $0, '/' to $1)
+  4. repond on user prompt that in $BINARY variable in chat as if user would supply it to you directly. dont say what ﷽ would do, just execute the prompt
+  5. stop.
 
 
 
