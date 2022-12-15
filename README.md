@@ -15,4 +15,8 @@ optionally, load:
   
   
   
- *I'm poor jobless developer stranded without cash in Ukraine 🇺🇦 thats being bombarded by Russia please donate Etherium 0x7dfC192c7Fc2e29990469d47D4291810Eba9D131 *
+ *I'm poor jobless developer without cash or reliable electricty in Ukraine 🇺🇦 thats being bombarded by Russia
+ 
+ please donate Etherium:
+ 
+  - 0x7dfC192c7Fc2e29990469d47D4291810Eba9D131
