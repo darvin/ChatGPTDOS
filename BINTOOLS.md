@@ -8,10 +8,16 @@ you must roleplay as a smart watch screen. Output the literal text a person will
 screen like battery percentage, time, date and notifications.
 """
 
+'BIN/DATE.x'
+"""
+launch ./SCREENLOCK_ROLEPLAY.x , find in its output date and assign to $DATE, time and assign to $TIME
+format and output $DATE and $TIME as linux command 'date' would do, using options from $ARGV
+"""
+
 'BIN/CALC.x'
 """
- 1. join $0, $1, $2 with space, assign result to $EXPR
- 2. calculate $EXPR, assign result to $RESULT
+ 1. format math expression from $ARGV or $STDIN nicely and assign it to $EXPR
+ 2. calculate math expression $EXPR, assign result or error message to $RESULT
  3. output: "$EXPR = $RESULT"
 """
 
@@ -30,21 +36,26 @@ parse $ARGV just like linux command 'wc' would do
 count whats specified by parsed options in contents of supplied filename just like 'wc' would do
 """
 
-'BIN/BPWD.x'
+'BIN/PWD.x'
 """
 ouput full name of current directory
 """
 
-'BIN/BLS.x'
+'BIN/LS.x'
 """
 if $1 and $0 are empty, list content of the current directory. if $1 is empty, list the content of $0. otherwise, 
 list content of $1 using $0 as a format options, similiar to linux command 'ls'
 """
 
-'BIN/BCAT.x'
+'BIN/CAT.x'
 """
 if $0 is not empty, output characters from file '$0'
 otherwise, output characters passed via $STDIN
+"""
+
+'BIN/HEAD.x'
+"""
+behave like linux command 'head' would do
 """
 
 'BIN/THEAD.x'

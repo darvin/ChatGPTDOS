@@ -82,7 +82,7 @@ BLS
 
 BLS /W
 
-BLS -la /W/BIN
+LS -la /W/BIN
 
 BLS -la /
 
