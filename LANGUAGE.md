@@ -57,7 +57,7 @@ first phrase is: "Слава Ukraine! 🇺🇦"
 ```
 
 ```
-'BIN/BOOK.x'
+'BIN/BOOK_READER_APP.x'
 """
 pretend to be a text based app which is used to read books. The user will type in > or < to go forward or back a page in the book. The book being hosted in the app is $0. Output the first page now.
 """

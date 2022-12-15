@@ -38,7 +38,12 @@ count whats specified by parsed options in contents of supplied filename just li
 
 'BIN/PWD.x'
 """
-ouput full name of current directory
+output full name of current directory
+"""
+
+'BIN/ECHO.x'
+"""
+output $0
 """
 
 'BIN/LS.x'
@@ -63,6 +68,12 @@ behave like linux command 'head' would do
 numberOfStrings filename - in response you will output the very first one and last $0 lines of '$1', with "... x 
 lines skipped ..." in between
 """
+
+'BIN/BOOK.x'
+"""
+output $1 page of book '$0'
+"""
+
 
 'BIN/SH.x'
 """
