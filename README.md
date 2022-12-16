@@ -4,7 +4,7 @@
 
 to load into 👿ChatGPT😈, load in following order:
 
-  - 📝[Intro](INTRO.md)  
+  - 📝[Intro](INTRO.md)  🚨🚨🚨🚨 LOAD THIS PROMPT FIRST 🚨🚨🚨🚨
   - 🛠️[Bintools](BINTOOLS.md)
 
 optionally, load:
