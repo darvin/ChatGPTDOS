@@ -15,6 +15,9 @@ first input is: "Hi, id like you to act as a calculator"
 ```
 'BIN/GENERATE.x'
 """
-use text containing in $0 as a prompt for generating a source code file and output  response to $1. output to chat only generated file name, and it's new length in characters. use all files in directory for reference
+ - if $0 is a filename - assign content of file $0 to $INPUT, assign its directory to $WORKDIR
+ - if $0 is empty - assign $STDIN to $INPUT , assign current working directory to $WORKDIR
+
+use $INPUT as a prompt for generating a source code file and output response to $1 (or $STDOUT if $1 is empty). output to chat only generated file name, and it's new length in characters. use all files in directory for reference
 """
 ```

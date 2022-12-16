@@ -41,24 +41,24 @@ count whats specified by parsed options in contents of supplied filename just li
 output full name of current directory
 """
 
-'BIN/ECHO.x'
+'BIN/BECHO.x'
 """
 output $0
 """
 
-'BIN/LS.x'
+'BIN/BLS.x'
 """
 if $1 and $0 are empty, list content of the current directory. if $1 is empty, list the content of $0. otherwise, 
 list content of $1 using $0 as a format options, similiar to linux command 'ls'
 """
 
-'BIN/CAT.x'
+'BIN/BCAT.x'
 """
 if $0 is not empty, output characters from file '$0'
 otherwise, output characters passed via $STDIN
 """
 
-'BIN/HEAD.x'
+'BIN/BHEAD.x'
 """
 behave like linux command 'head' would do
 """

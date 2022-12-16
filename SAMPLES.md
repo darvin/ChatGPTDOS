@@ -1,5 +1,23 @@
 
 ```
+
+'SRC/gen1/mysterious_class.py.md'
+"""
+MysteriousClass has two methods:
+  - method `number` that takes integer and returns next prime number after that integer
+  - method `text` that returns first 16 characters of random ayat from Quran 
+"""
+
+
+'SRC/gen1/class_caller.py.md'
+"""
+this script takes following arguments:
+
+ -  `-q` : outputs MysteriousClass.text() and exits
+ -  `-n $NUMBER` : outputs MysteriousClass.number($NUMBER) and exits
+"""
+
+
 'README.md'
 """
 outputs hello world in all known languages, optionally - with transliteration, optionally for languages that's using latin script - in gothic.
