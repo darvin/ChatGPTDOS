@@ -1,6 +1,19 @@
 # 👿ChatGPTDOS💻
 💾Disc Operating System for ChatGPT😈
 
+## Usage:
+
+copy and paste into 👿ChatGPT😈 chat:
+
+```
+hhhhhhh
+```
+
+
+
+
+## Development
+
 
 copy and paste into 👿ChatGPT😈 window in following order:
 
