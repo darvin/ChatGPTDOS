@@ -9,8 +9,10 @@ MysteriousClass has two methods:
 """
 
 
-'SRC/gen1/class_caller.py.md'
+'SRC/gen1/main.py.md'
 """
+import MysteriousClass from mysterious_class.py
+
 this script takes following arguments:
 
  -  `-q` : outputs MysteriousClass.text() and exits
