@@ -2,7 +2,7 @@
 'SRC/TOOLS/manifest_create.py.md'
 """
 script takes a directory as an argument, if its not passed - it uses current working directory.
-it iterates over all files in directory recursively. it creates json file, containing full path to ".*.md" files in the
+it iterates over all files in directory recursively. it creates json file, containing full path to ".*.md" (note the double extension: `file.c.md` matches, `file.md` - doesn't) files in the
 directory as a keys, and dictionaries with key `out`: $OUT_FILENAME as a values. $OUT_FILENAME is a file name with ".md" from the end removed.
 
 for example, for directory with contents:
@@ -18,12 +18,23 @@ root/
     └── main.c
 
 
+it must print out each added to MANIFEST file, like that:
+
+"root/subdir1/readme.py.md -> "root/subdir1/readme.py"
+
+
 it will create following `MANIFEST.json` file:
 
 {
 	"root/subdir1/readme.py.md": {"out": "root/subdir1/readme.py"},
 	"root/subdir2/readme.c.md": {"out": "root/subdir2/readme.c"}
 }
+
+it must print out each added to MANIFEST file, like that:
+
+"root/subdir1/readme.py.md -> "root/subdir1/readme.py"
+
+
 """
 
 'SRC/TOOLS/upload.py.md'
