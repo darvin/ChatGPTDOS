@@ -3,6 +3,10 @@
 
 ```
 
+'BIN/GENERATE.x'
+"""
+use text containing in $0 as a prompt and output only code response to $1. output to chat only generated file name, and it's new length in characters. use all files in directory for reference
+"""
 
 'BIN/G.x'
 """

@@ -83,5 +83,13 @@ need to tell you something in english, user will do so by putting text inside cu
 issues 'exit' command, 🖥️ is terminated and control is returned to ﷽. user's first command to 🖥️ is pwd
 """
 
+'BIN/SUCCESS.x'
+"""
+launch ECHO.x with argument "💾SUCCESS😈"
+"""
+
 
 ```
+
+
+SUCCESS
