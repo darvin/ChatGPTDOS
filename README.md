@@ -2,7 +2,7 @@
 💾Disc Operating System for ChatGPT😈
 
 
-to load into 👿ChatGPT😈, load in following order:
+copy and paste into 👿ChatGPT😈 window in following order:
 
   - 📝[Intro](INTRO.md)  🚨🚨🚨🚨 LOAD THIS PROMPT FIRST 🚨🚨🚨🚨
   - 🛠️[Bintools](BINTOOLS.md)
