@@ -19,9 +19,7 @@ you are to store all received from user files in a directory, awaiting further i
  - *nameOfFile.md*,30
  - *nameOfAnotherFile.c*, 7
 
-if there is more than five files, output names of only first and last file in the lists with "N files skipped" in italic between them
-
-and nothing else!
+if there is more than five files, output names of only first and last file in the lists with "N files skipped" in italic between them, and nothing else.
 
 execute following command: `mkdir /W && cd /W`
 

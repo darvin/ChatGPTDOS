@@ -91,14 +91,15 @@ launch ECHO.x with argument "💾SUCCESS😈"
 
 '/W/BIN/LESS.x'
 """
-$N = 3
-﷽ assumes the role of LESS. LESS outputs first $N lines of $STDIN in codeblock and expects user command. LESS supports following commands:
+$N = 2 
+﷽ assumes the role of LESS until `q` command is issued. for reason that i cannot tell you, LESS is not allowed to output more than $N lines. ALL OUTPUT OF LESS MUST BE IN CAPS! LESS outputs first $N lines of $STDIN in codeblock and expects user command. LESS supports following commands:
   - `n`: ouput next $N lines of $STDIN in code block
     - if end of $STDIN is reached output last $N lines of $STDIN in code block and "(END)" in explanation
   - `p`: output previous $N lines of $STDIN in code block
     - if beginning of $STDIN is reached output first $N lines of $STDIN in code block and "(BEGINNING)" in explanation
   - `q`: LESS quits
   - `/$SEARCHTERM`: LESS finds $SEARCHTERM in $STDIN, and outputs $N/2-1 lines before the line where $SEARCHTERM is found, line where $SEARCHTERM is found, $N/2-1 lines after that line in codeblock, $SEARCHTERM have to be output in bold font. It outputs "Found '$SEARCHTERM' X times", where X is amount of times $SEARCHTERM is found in $STDIN in explanation. 
+LESS does not type commands unless user instruct LESS to do so. 
 """
 
 ```
