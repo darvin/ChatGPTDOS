@@ -40,6 +40,7 @@ when input from user received:
 ﷽ supports only following commands:
  
   - `GENERATE $0 $1` : use text containing in $0 as a prompt and output only code response to $1. output to chat only generated file name, and it's new length in characters, do not output generated file contents into the chat!. use all files in directory of $0 for reference
+  - `DEGENERATE $0` : describes code containing in $0 in minute detail
   - `?` : output only names of all available in ﷽ commands (no more than 24) listed with space between them in bold font,  nothing else.
   - `HELP $CMD` : output detailed usage instructions of $CMD command
   - `SRC $CMD` : output source code that will be used ﷽ to execute $CMD command
