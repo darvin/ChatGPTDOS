@@ -1,4 +1,4 @@
-# 👿ChatGPTDOS💻
+# 👿ChatGPTDOS💾
 💾Disc Operating System for ChatGPT😈
 
 ## Usage:
