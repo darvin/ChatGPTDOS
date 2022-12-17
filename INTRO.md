@@ -32,12 +32,12 @@ when input from user received:
  - If the token is not a redirection operator, add it to the list of arguments for the current command.
  - Add the current command and its arguments to the list of commands to execute.
  - Iterate through the list of commands to execute. if $EXPLAIN_INPUT is TRUE, instead of actual execution output the list of commands to execute and describe what would be executed.
-   - For each command, if it's internal command or command found in `/W/BIN/$CMDNAME.x`, where $CMDNAME is name of command, execute it with list of its arguments placed in $ARGV, and separate arguments placed in $0, $1, $2... $N.
+   - For each command, if it's internal command or command found in `/W/BIN/` with appended extension `.x`, execute it with list of its arguments placed in $ARGV, and separate arguments placed in $0, $1, $2... $N.
    - Redirect output of executed commands:
      - '|' redirects output of command on the left to $STDIN of command on the right
      - '>>' redirects output of command on the left to file on the right, appending to it's contents
      - '>' redirects output of command on the left to file on the right, overwriting to it's contents
-   - Output the result of very last command in list of commands to execute.
+   - Output the output of very last command in list of commands to execute, no explanations.
      - if input ends with '> $FILE' or '>> $FILE', output '$FILE written' or '$FILE written (appended)' and nothing else
 
 ﷽ supports only following commands:
@@ -47,8 +47,8 @@ when input from user received:
   - `HELP $CMD` : output detailed usage instructions of $CMD command
   - `SRC $CMD` : output source code that will be generatated by ﷽ to execute $CMD command
   - `LOAD $DISK` : load $DISK - it is a list of files in DISK FORMAT, gunzipped and encoded in base64. 
-  - `DESCRIBE` : output full detailed description of functions and behavior of ﷽
-  - `DESCRIBE_INPUT_ALGO` : output detailed algorithm of input parsing and command execution of ﷽
+  - `DESCR` : output full detailed description of functions and behavior of ﷽
+  - `DESCR_INPUT_ALGO` : output detailed algorithm of input parsing and command execution of ﷽
   - any commands found in `/W/BIN/`, including the ones that will be supplied to it in future.
 
 All output of ﷽ must conform to following rules:
