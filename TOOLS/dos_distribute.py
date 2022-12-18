@@ -40,29 +40,24 @@ def compress_string(input_string):
     # Append the dictionary of emojis used to the end of the string
     output_string += "\n\n{"
     for emoji, word in emojis_used.items():
-        output_string += f"{emoji}{word}"
-    output_string += f"{word_to_emoji('>S4<')}>S4<"
-    output_string += f"{word_to_emoji('>S3<')}>S3<"
-    output_string += f"{word_to_emoji('>S2<')}>S2<"
-    output_string += f"{word_to_emoji('>N<')}>N<"
+        output_string += f"{emoji}:{word}"
+    output_string += f"{word_to_emoji('>S4<')}:>S4<"
+    output_string += f"{word_to_emoji('>S3<')}:>S3<"
+    output_string += f"{word_to_emoji('>S2<')}:>S2<"
+    output_string += f"{word_to_emoji('>N<')}:>N<"
     output_string += "}\n"
 
     return output_string
 
-def word_to_emoji(word: str) -> str:
-    # Calculate the hash of the word
-    word_hash = hashlib.sha256(word.encode()).hexdigest()
-    
-    # Convert the hash to an integer
-    emoji_code = int(word_hash, 16)
-    
-    # Map the integer to a Unicode emoji character
-    # The range of Unicode emoji characters is from U+1F600 to U+1F64F
-    emoji_range = 0x1F64F - 0x1F600 + 1
-    emoji_code %= emoji_range
-    emoji_code += 0x1F600
-    
-    return chr(emoji_code)
+def word_to_emoji(word):
+  # Calculate the hash of the word
+  hash = 0
+  for ch in word:
+    hash += ord(ch)
+  hash = hash % (0x06FF - 0x0600 + 1)
+
+  # Convert the hash to a Unicode character
+  return chr(hash + 0x0600)
 
 import re
 
