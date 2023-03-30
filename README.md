@@ -58,10 +58,3 @@ Planned features:
  - book generation
  - compiler
 
-contact me standardtemplateconstruct2022@gmail.com for suggestions or job offers
-
-
-
-*donate Etherium to support development:*
- 
-  - *0x7dfC192c7Fc2e29990469d47D4291810Eba9D131*
