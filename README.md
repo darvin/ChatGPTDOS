@@ -50,11 +50,3 @@ optionally, load:
   
  
 
-
-Planned features:
-
- - full project generation
-   - on hallucinated vm unit tests
- - book generation
- - compiler
-
